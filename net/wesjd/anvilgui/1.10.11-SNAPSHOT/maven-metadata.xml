@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>net.wesjd</groupId>
+  <artifactId>anvilgui</artifactId>
+  <versioning>
+    <lastUpdated>20251225065250</lastUpdated>
+    <snapshot>
+      <timestamp>20251225.065250</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.10.11-20251225.065250-1</value>
+        <updated>20251225065250</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.10.11-20251225.065250-1</value>
+        <updated>20251225065250</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>1.10.11-SNAPSHOT</version>
+</metadata>
