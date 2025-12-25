@@ -3,21 +3,21 @@
   <groupId>net.wesjd</groupId>
   <artifactId>anvilgui-1_14_R1</artifactId>
   <versioning>
-    <lastUpdated>20251225065250</lastUpdated>
+    <lastUpdated>20251225183558</lastUpdated>
     <snapshot>
-      <timestamp>20251225.065250</timestamp>
+      <timestamp>20251225.183558</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.10.11-20251225.065250-1</value>
-        <updated>20251225065250</updated>
+        <value>1.10.11-20251225.183558-1</value>
+        <updated>20251225183558</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.10.11-20251225.065250-1</value>
-        <updated>20251225065250</updated>
+        <value>1.10.11-20251225.183558-1</value>
+        <updated>20251225183558</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
