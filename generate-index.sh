@@ -16,17 +16,20 @@ a { text-decoration: none; color: #0366d6; }
 </head>
 <body>
 <h1>mvn.wesjd.net</h1>
-<p>Contents:</p>
+<p>Contents</p>
 <ul>" > "$OUTPUT_FILE"
 
-find . -type d ! -path . | sort | while read dir; do
-    # Skip hidden directories
-    [[ "$(basename "$dir")" == .* ]] && continue
-    # Skip CNAME and the script itself if listed
-    [[ "$(basename "$dir")" == "CNAME" ]] && continue
-    [[ "$(basename "$dir")" == "$(basename "$0")" ]] && continue
-    # Generate link relative to root
-    href="${dir#./}/"
+find . -type f | sort | while read file; do
+    # Skip files in dot directories
+    if [[ "$file" =~ (^|/)\.[^/]+ ]]; then
+        continue
+    fi
+    # Skip CNAME, index.html, and the script itself
+    base=$(basename "$file")
+    if [[ "$base" == "CNAME" ]] || [[ "$base" == "$(basename "$0")" ]] || [[ "$base" == "index.html" ]]; then
+        continue
+    fi
+    href="${file#./}"
     echo "  <li><a href=\"$href\">$href</a></li>" >> "$OUTPUT_FILE"
 done
 
